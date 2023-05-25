@@ -1,0 +1,44 @@
+[
+  {
+    "dayOfWeek": 1,
+    "openTime": "10:00:00",
+    "closeTime": "22:00:00",
+    "dayOff": false
+  },
+  {
+    "dayOfWeek": 2,
+    "openTime": "10:00:00",
+    "closeTime": "22:00:00",
+    "dayOff": false
+  },
+  {
+    "dayOfWeek": 3,
+    "openTime": "10:00:00",
+    "closeTime": "22:00:00",
+    "dayOff": false
+  },
+  {
+    "dayOfWeek": 4,
+    "openTime": "10:00:00",
+    "closeTime": "22:00:00",
+    "dayOff": false
+  },
+  {
+    "dayOfWeek": 5,
+    "openTime": "11:00:00",
+    "closeTime": "21:00:00",
+    "dayOff": false
+  },
+  {
+    "dayOfWeek": 6,
+    "openTime": null,
+    "closeTime": null,
+    "dayOff": true
+  },
+  {
+    "dayOfWeek": 7,
+    "openTime": null,
+    "closeTime": null,
+    "dayOff": true
+  }
+]
