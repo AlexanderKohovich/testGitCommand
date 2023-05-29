@@ -41,12 +41,12 @@ public class Main {
     }
 // qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
 //    akjashd kj da\
-//
+//qweqweqwe
 //    public static List<String> getDaysString() {
 //        d asd
 //                asddasd
 //                        as
-//                        d
+//           qweqweqweqwe             d
 //                                sa
 //                                isNextDayTheSame(as)
 //    }
