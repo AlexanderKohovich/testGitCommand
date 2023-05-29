@@ -39,7 +39,6 @@ public class Main {
         System.out.println(buildOpeningScheduleString(list));
 
     }
-    //111111111111111111111111111
 // qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
 //    akjashd kj da\
 //
