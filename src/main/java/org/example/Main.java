@@ -45,6 +45,7 @@ public class Main {
         System.out.println(buildOpeningScheduleString(list));
 //testq
     }//asjdghakjsdhj
+    // merge
     private static final Logger LOG = Logger.getLogger(Main.class.getName());
     private static final DateTimeFormatter DEFAULT_TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm:ss");
     private static final DateTimeFormatter TIME_FORMATTER_FOR_CODE = DateTimeFormatter.ofPattern("HH.mm");
