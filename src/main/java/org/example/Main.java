@@ -43,8 +43,8 @@ public class Main {
         List<SheduleDto> list = List.of(s1, s2, s3, s4, s5, s6, s7);
         System.out.println(buildSheduleCode(list));
         System.out.println(buildOpeningScheduleString(list));
-
-    }
+//testq
+    }//asjdghakjsdhj
     private static final Logger LOG = Logger.getLogger(Main.class.getName());
     private static final DateTimeFormatter DEFAULT_TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm:ss");
     private static final DateTimeFormatter TIME_FORMATTER_FOR_CODE = DateTimeFormatter.ofPattern("HH.mm");
