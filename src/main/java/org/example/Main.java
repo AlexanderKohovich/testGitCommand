@@ -30,9 +30,9 @@ public class Main {
     private static final int DAYS_TO_ADD = 1;
 
     public static void main(String[] args) throws JsonProcessingException {
-        JsonMapper mapper = new JsonMapper();
-//        List<SheduleDto> sheduleDtos = mapper.getShedulesDtos();
-//        System.out.println(sheduleDtos.size());
+//        JsonMapper mapper = new JsonMapper();
+////        List<SheduleDto> sheduleDtos = mapper.getShedulesDtos();
+////        System.out.println(sheduleDtos.size());
         SheduleDto s1 = new SheduleDto(1, "12:00:00", "21:00:00", false);
         SheduleDto s2 = new SheduleDto(2, "12:00:00", "21:00:00", true);
         SheduleDto s3 = new SheduleDto(3, "12:00:00", "21:00:00", false);
@@ -45,14 +45,13 @@ public class Main {
         System.out.println(buildOpeningScheduleString(list));
 
     }
-
     private static final Logger LOG = Logger.getLogger(Main.class.getName());
     private static final DateTimeFormatter DEFAULT_TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm:ss");
     private static final DateTimeFormatter TIME_FORMATTER_FOR_CODE = DateTimeFormatter.ofPattern("HH.mm");
 
     private static final List<String> DAYS_STRING = List.of("ПН", "ВТ", "СР", "ЧТ", "ПТ", "СБ", "ВС");
 
-    private static String buildOpeningScheduleString(List<SheduleDto> sheduleDtos) {
+    protected static String buildOpeningScheduleString(List<SheduleDto> sheduleDtos) {
         StringBuilder result = new StringBuilder();
         int i = 0, j = 1;
         while (i < sheduleDtos.size()) {
@@ -72,7 +71,7 @@ public class Main {
                     .append(day.getDayOff() ? "" : DAYS_STRING.get(i))
                     .append(flag ? "" : "-")
                     .append(flag ? "" : DAYS_STRING.get(j - 1))
-                    .append(" c ")
+                    .append(" с ")
                     .append(day.getOpenTime())
                     .append(" до ")
                     .append(day.getCloseTime());
@@ -82,7 +81,7 @@ public class Main {
         return result.toString();
     }
 
-    private static String buildSheduleCode(List<SheduleDto> sheduleDtos) {
+    protected static String buildSheduleCode(List<SheduleDto> sheduleDtos) {
         StringBuilder result = new StringBuilder();
         int i = 0, j = 1;
         try {
